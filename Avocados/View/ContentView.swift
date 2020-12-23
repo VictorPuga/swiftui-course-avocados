@@ -14,7 +14,7 @@ struct ContentView: View {
   var body: some View {
     ScrollView(.vertical) {
       VStack {
-        // Header
+        // MARK: Header
         ScrollView(.horizontal, showsIndicators: false) {
           HStack(alignment: .top, spacing: 0) {
             ForEach(headers) { item in
@@ -23,13 +23,19 @@ struct ContentView: View {
           }
         }
         
-        // Footer
+        // MARK: Dishes
+        Text("Avocado Dishes")
+          .fontWeight(.bold)
+          .modifier(TitleModifier())
+        DishesView()
+          .frame(maxWidth: 640)
+        
+        // MARK: Footer
         VStack(alignment: .center, spacing: 20) {
-          Text("All About Avodados")
-            .font(.system(.title, design: .serif))
+          Text("All About Avocados")
             .fontWeight(.bold)
-            .foregroundColor(Color("ColorGreenAdaptive"))
-            .padding()
+            .modifier(TitleModifier())
+            .frame(minHeight: 60)
           Text("Everything you wanted to know about avocados but were too afraid to ask.")
             .font(.system(.body, design: .serif))
             .multilineTextAlignment(.center)
@@ -42,6 +48,15 @@ struct ContentView: View {
     } // :ScrollView
     .edgesIgnoringSafeArea(.all)
     .padding(0)
+  }
+}
+
+struct TitleModifier: ViewModifier {
+  func body(content: Content) -> some View {
+    content
+      .font(.system(.title, design: .serif))
+      .foregroundColor(Color("ColorGreenAdaptive"))
+      .padding(8)
   }
 }
 

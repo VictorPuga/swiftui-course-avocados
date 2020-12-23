@@ -5,6 +5,7 @@ Fifth app from the SwiftUI online course
 ## Main Learnings
 
 - Animation
+- Custom modifiers
 - Views:
   - TabView
   - Label

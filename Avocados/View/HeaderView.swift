@@ -20,7 +20,6 @@ struct HeaderView: View {
       .delay(0.25)
   }
   
-  
   // MARK: - Body
   var body: some View {
     ZStack {
