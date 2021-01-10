@@ -27,7 +27,7 @@ struct DishesView: View {
   // MARK: - Body
   var body: some View {
     HStack(alignment: .center, spacing: 8) {
-      // Col 1
+      // MARK: Col 1
       VStack(alignment: .leading, spacing: 4) {
         ForEach(leftData, id: \.icon) { item in
           Group {
@@ -44,7 +44,7 @@ struct DishesView: View {
           }
         } // :ForEach
       }
-      // Col 2
+      // MARK: Col 2
       VStack(alignment: .center, spacing: 8) {
         HStack {
           Divider()
@@ -56,7 +56,7 @@ struct DishesView: View {
           Divider()
         }
       }
-      // Col 3
+      // MARK: Col 3
       VStack(alignment: .trailing, spacing: 4) {
         ForEach(rightData, id: \.icon) { item in
           Group {

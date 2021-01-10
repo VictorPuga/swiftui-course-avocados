@@ -22,7 +22,7 @@ struct RecipeDetailView: View {
           .resizable()
           .scaledToFit()
         Group {
-          // MARK: - Title
+          // MARK: Title
           Text(recipe.title)
             .font(.system(.largeTitle, design: .serif))
             .fontWeight(.bold)
@@ -30,13 +30,13 @@ struct RecipeDetailView: View {
             .foregroundColor(Color("ColorGreenAdaptive"))
             .padding(.top, 10)
           
-          // MARK: - Ratings
+          // MARK: Ratings
           RecipeRatingView(recipe: recipe)
           
-          // MARK: - Cooking
+          // MARK: Cooking
           RecipeCookingView(recipe: recipe)
           
-          // MARK: - Ingredients
+          // MARK: Ingredients
           Text("Ingredients")
             .fontWeight(.bold)
             .modifier(TitleModifier())
@@ -52,7 +52,7 @@ struct RecipeDetailView: View {
             } // :ForEach
           }
           
-          // MARK: - Instructions
+          // MARK: Instructions
           Text("Instructions")
             .fontWeight(.bold)
             .modifier(TitleModifier())
