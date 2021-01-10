@@ -10,3 +10,5 @@ Fifth app from the SwiftUI online course
 - Views:
   - TabView
   - Label
+  - Form
+  - Section
