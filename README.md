@@ -6,6 +6,7 @@ Fifth app from the SwiftUI online course
 
 - Animation
 - Custom modifiers
+- Sheet presentation
 - Views:
   - TabView
   - Label
