@@ -1,6 +1,6 @@
 # Avocados App
 
-Fifth app from the SwiftUI online course
+Sixth app from the SwiftUI online course
 
 ## Main Learnings
 
